@@ -1,0 +1,10 @@
+.env
+
+__pycache__/
+*.pyc
+*.pyo
+
+faiss_store/
+*.faiss
+*.npy
+*.index
