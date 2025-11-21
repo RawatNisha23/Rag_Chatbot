@@ -1,11 +1,8 @@
 import os
-from typing import List
-from dotenv import load_dotenv
-from langchain.schema import Document, SystemMessage, HumanMessage
+from langchain.schema import SystemMessage, HumanMessage
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from config import *
-import re
 from create_faiss_index import create_faiss_index
 from data_processor import find_equipment_in_pdf, get_documents_for_equipment
 
