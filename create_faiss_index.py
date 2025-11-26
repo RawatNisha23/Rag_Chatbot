@@ -4,6 +4,7 @@ from config import *
 from data_processor import extract_pdf_text_ocr, organize_pages_by_equipment, split_large_documents
 
 
+
 def create_faiss_index(pdf_folder=PDF_FOLDER, index_folder=FAISS_FOLDER):
     all_document = []
     for file in sorted(os.listdir(pdf_folder)):
@@ -25,3 +26,4 @@ def create_faiss_index(pdf_folder=PDF_FOLDER, index_folder=FAISS_FOLDER):
 #  #       create_faiss_index()
 #  #   else:
 #  #       print("FAISS folder already exists:", FAISS_FOLDER)
+
